@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Whendelyn's Profile</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER WITH LOGO AND NAVIGATION -->
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo">
+                🌸 Whendelyn's Profile
+            </div>
+            <p>
+                <b>A College Student Major in Information System.</b>
+            </p>
+        </div>
+        <!-- NAVIGATION -->
+        <nav class="site-nav">
+            <a href="#bio">Bio</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#featured">Featured Photo</a>
+            <a href="#location">Location</a>
+        </nav>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main class="profile-layout">
+        <article class="profile-content">
+            <!-- BIO SECTION -->
+            <section id="bio" class="profile-section">
+                <h2>Bio</h2>
+                <picture>
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="wen-small.jpg">
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="wen-large.jpg">
+                    <img
+                        class="profile-image"
+                        src="wen-large.jpg"
+                        alt="Whendelyn's Profile Picture">
+                </picture>
+                <p>
+                    Hello! My name is
+                    <strong>Whendelyn Bangis</strong>.
+                </p>
+                <p>
+                    I am interested in K-drama series.
+                </p>
+            </section>
+            <!-- HOBBIES SECTION -->
+            <section id="hobbies" class="profile-section">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li data-interest="K-dramas">
+                        🎬 Watching K-dramas
+                    </li>
+                    <li data-interest="music">
+                        🎧 Listening to Music
+                    </li>
+                    <li data-interest="Traveling">
+                        ✈️ Traveling
+                    </li>
+                </ul>
+            </section>
+            <!-- ASIDE / SIDEBAR -->
+            <aside class="fun-fact" data-role="student">
+                <h3>Fun Fact</h3>
+                <p>
+                    I love discovering new ideas.
+                </p>
+                <p>
+                    <strong>Role:</strong>
+                    I am BSIS Student
+                </p>
+            </aside>
+            <!-- CONTACT INFORMATION -->
+            <section id="contact" class="profile-section">
+                <h2>Contact Information</h2>
+                <form>
+                    <table class="contact-table">
+                        <!-- FIRST ROW -->
+                        <tr>
+                            <td>
+                                <label for="email">
+                                    Email:
+                                </label>
+                                <br>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="bangiswhendelyn02@gmail.com"
+                                    required>
+                            </td>
+                            <td>
+                                <label for="phone">
+                                    Mobile Number:
+                                </label>
+                                <br>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="09123456789"
+                                    pattern="[0-9]{11}"
+                                    required>
+                            </td>
+                        </tr>
+                        <!-- SECOND ROW -->
+                        <tr>
+                            <td>
+                                <label for="date">
+                                    Date:
+                                </label>
+                                <br>
+                                <input
+                                    type="date"
+                                    id="date"
+                                    name="date"
+                                    required>
+                            </td>
+                            <td>
+                                <label for="color">
+                                    Favorite Color:
+                                </label>
+                                <br>
+                                <input
+                                    type="color"
+                                    id="color"
+                                    name="color"
+                                    value="#FFC0CB">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input
+                        type="submit"
+                        value="Submit">
+                </form>
+            </section>
+            <!-- ACHIEVEMENTS -->
+            <section id="achievements" class="profile-section">
+                <h2>Achievements</h2>
+                <details>
+                    <summary>
+                        Click to see my achievements
+                    </summary>
+                    <ul>
+                        <li>
+                            I won 3rd Place in a singing contest.
+                        </li>
+                        <li>
+                            Auditioned for The Voice Teens Philippines.
+                        </li>
+                        <li>
+                            Consistent Academic Achiever in High School.
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <!-- FEATURED PHOTO -->
+            <section id="featured" class="profile-section">
+                <h2>My Cute Featured Photo</h2>
+                <picture>
+                    <source
+                        media="(max-width: 500px)"
+                        srcset="wen-small.jpg">
+                    <source
+                        media="(min-width: 501px)"
+                        srcset="wen-large.jpg">
+                    <img
+                        class="profile-image"
+                        src="wen-large.jpg"
+                        alt="My Cute Featured Photo">
+                </picture>
+                <p>
+                    My cute featured photo.
+                </p>
+            </section>
+            <!-- GOOGLE MAP -->
+            <section id="location" class="profile-section">
+                <h2>My School Location</h2>
+                <iframe
+                    class="school-map"
+                    src="https://www.google.com/maps?q=Technological%20University%20of%20the%20Philippines%20Manila&output=embed"
+                    title="Technological University of the Philippines Manila">
+                </iframe>
+            </section>
+        </article>
+    </main>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>
+            <b>Connect with me:</b>
+        </p>
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="social-icons">
+            <a
+                href="https://www.facebook.com/whendelynB"
+                target="_blank"
+                title="Facebook">
+                ⓕ
+            </a>
+            <a
+                href="#"
+                title="Instagram">
+                📷
+            </a>
+            <a
+                href="#"
+                title="TikTok">
+                🎵
+            </a>
+        </div>
+        <p>
+            &copy; 2025 Whendelyn's Profile
+        </p>
+    </footer>
+</body>
+</html>

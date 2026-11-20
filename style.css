@@ -1,0 +1,363 @@
+/* TASK 1: BASE STYLING AND TYPOGRAPHY */
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    background-color: #fff5f8;
+    color: #333;
+    line-height: 1.6;
+}
+/* Headings */
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    color: #8f3f5f;
+}
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    border-bottom: 2px solid #f2b6ca;
+
+    padding-bottom: 8px;
+}
+h3 {
+    font-size: 1.3rem;
+}
+/* TASK 2: HEADER */
+.site-header {
+    background-color: #d96b93;
+    color: white;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+.header-content p {
+    margin: 0;
+    color: white;
+}
+/* TASK 2: NAVIGATION */
+.site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    background-color: #b84f78;
+    padding: 12px;
+    border-radius: 10px;
+}
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+/* Navigation hover */
+.site-nav a:hover {
+    background-color: white;
+    color: #b84f78;
+    transform: translateY(-2px);
+}
+/* TASK 2: MAIN LAYOUT USING GRID */
+.profile-layout {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.profile-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+/* SECTIONS */
+.profile-section,
+.fun-fact {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow:
+        0 4px 14px rgba(143, 63, 95, 0.12);
+    transition: 0.3s ease;
+}
+/* Section hover */
+.profile-section:hover,
+.fun-fact:hover {
+    box-shadow:
+        0 7px 20px rgba(143, 63, 95, 0.18);
+    transform: translateY(-2px);
+}
+/* Full-width sections */
+#bio,
+#contact,
+#location {
+    grid-column: 1 / -1;
+}
+/* IMAGES */
+.profile-image {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+/* Image hover */
+.profile-image:hover {
+    transform: scale(1.03);
+}
+/* HOBBIES */
+ul {
+    padding-left: 25px;
+}
+li {
+    margin-bottom: 10px;
+}
+/* TASK 3: FORM STYLING */
+.contact-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 12px;
+}
+.contact-table td {
+    width: 50%;
+    vertical-align: top;
+}
+/* Labels */
+label {
+    font-weight: 600;
+    color: #6f304a;
+}
+/* Input types */
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="color"] {
+    width: 100%;
+    margin-top: 6px;
+    padding: 11px;
+    border: 1px solid #d9a7b9;
+    border-radius: 8px;
+    background-color: #fffafb;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+/* Color input */
+input[type="color"] {
+    height: 45px;
+    padding: 4px;
+    cursor: pointer;
+}
+/* :focus */
+input:focus {
+    outline: none;
+    border-color: #b84f78;
+    box-shadow:
+        0 0 0 3px rgba(184, 79, 120, 0.15);
+}
+/* :hover */
+input:hover {
+    border-color: #b84f78;
+}
+/* :required */
+input:required {
+    border-left: 4px solid #d96b93;
+}
+/* Submit button */
+input[type="submit"] {
+    background-color: #b84f78;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+/* Button hover */
+input[type="submit"]:hover {
+    background-color: #8f3f5f;
+    transform: translateY(-2px);
+}
+/* TASK 5: DETAILS AND SUMMARY */
+details {
+    background-color: #fff1f5;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s ease;
+}
+details:hover {
+    box-shadow:
+        0 3px 10px rgba(143, 63, 95, 0.12);
+}
+details[open] {
+    box-shadow:
+        0 3px 10px rgba(143, 63, 95, 0.1);
+}
+summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: #8f3f5f;
+    transition: 0.3s ease;
+}
+/* Summary hover */
+summary:hover {
+    color: #b84f78;
+}
+/* SCHOOL MAP */
+.school-map {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 12px;
+}
+/* TASK 5: FOOTER */
+.site-footer {
+    background-color: #6f304a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+.site-footer p {
+    margin: 8px 0;
+}
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+/* Footer social icon hover */
+.social-icons a:hover {
+    background-color: white;
+    color: #6f304a;
+    transform: scale(1.15);
+}
+/* TASK 4: RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    /* Header */
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    /* Navigation */
+    .site-nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 0;
+    }
+    .site-nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* Main layout */
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+    /* Stack sections vertically */
+    #bio,
+    #contact,
+    #location,
+    #hobbies,
+    #achievements,
+    #featured,
+    .fun-fact {
+        grid-column: 1;
+    }
+    /* Contact table */
+    .contact-table,
+    .contact-table tbody,
+    .contact-table tr,
+    .contact-table td {
+        display: block;
+        width: 100%;
+    }
+    .contact-table {
+        border-spacing: 0;
+    }
+    .contact-table td {
+        margin-bottom: 15px;
+    }
+    /* Responsive image */
+    .profile-image {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Responsive map */
+    .school-map {
+        width: 100%;
+        height: 260px;
+    }
+}
+/* SMALL MOBILE DEVICES */
+@media (max-width: 480px) {
+    .profile-layout {
+        width: 100%;
+        padding: 20px 12px;
+    }
+    .profile-section,
+    .fun-fact {
+        padding: 18px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    .school-map {
+        height: 220px;
+    }
+}
